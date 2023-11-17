@@ -1,0 +1,419 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+body {
+    background-image: url(./bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5vh 10vw 10vh 10vw;
+    color: white;
+    font-family: 'Outfit', sans-serif;
+}
+img {
+    height: 40px;
+}
+
+h1 {
+    font-size: 120px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    line-height: 0.7;
+}
+
+h1 span {
+    font-weight: 700;
+}
+
+h2 {
+    color: #C5138F;
+    font-size: 60px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+main p {
+    color: #e0e0e0;
+    font-size: 26px;
+    margin-bottom: 50px;
+    line-height: 1.2;
+}
+
+ul {
+    color: #BDC4CE;
+    font-size: 26px;
+    line-height: 1.5;
+    padding-left: 1.5em;
+}
+
+ul span {
+    font-weight: 700;
+}
+
+footer {
+    margin-top: 100px;
+}
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    opacity: 0.5;
+    border: 2px solid white;
+}
+
+footer span {
+    font-size: 26px;
+    padding-left: 15px;
+    color: #BDC4CE;
+}
+
+#proceed {
+    margin-top: 30px;
+    width: 350px;
+    height: 90px;
+    background-color: #00ffff;
+    font-size: 32px;
+    font-weight: 900;
+    margin-left: 10vw;
+    box-shadow: 1px 1px 50px #00ffffb7;
+    cursor: pointer;
+}
+
+/* ----------IMPOSTAZIONE FORM -----------*/
+
+#form1 {
+    display: flex;
+    position: relative;
+}
+
+#campoPolicy {
+
+    display: flex;
+    align-items: center;
+}
+
+/* ----------checkbox -----------*/
+
+input[type="checkbox"] {
+    /* ----------RESET-----------*/
+
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: transparent;
+
+    width: 1.5vh;
+    cursor: pointer;
+}
+
+/* stile*/
+
+:root {
+
+    --form-control-color: aliceblue;
+}
+
+/* INPUT */
+
+input[type="checkbox"] {
+
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    margin: 0;
+
+    width: 2em;
+    height: 2em;
+    border: 0.20em solid;
+    color: aliceblue;
+
+    display: grid;
+    place-content: center;
+}
+
+input[type="checkbox"]::before {
+
+    content: "";
+    width: 1em;
+    height: 1em;
+
+    transform: scale(0);
+    transform-origin: bottom left;
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em var(--form-control-color);
+}
+
+input[type="checkbox"]:checked::before {
+    transform: scale(1);
+}
+
+input[type="checkbox"]:focus {
+    outline: max(2px, 0.15em) solid currentColor;
+    outline-offset: max(2px, 0.15em);
+}
+
+/* -------------------seconda pagina--------------------- */
+
+#circleTimer {
+    width: 150px;
+    position: relative;
+    transform: translateY(-25%);
+    left: 80%;
+    border-radius: 100%;
+}
+
+#contenitore_orologio {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    position: relative;
+    top: -125px;
+}
+
+#orologio {
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 70px;
+    margin-bottom: 50px;
+    line-height: 1;
+    text-align: center;
+}
+
+section {
+    max-width: 900px;
+    text-align: center;
+    margin: 120px auto;
+}
+
+section div {
+    display: inline;
+}
+
+.bottone_domanda {
+    width: 400px;
+    height: 70px;
+    background-color: #ffffff1d;
+    border-radius: 50px;
+    color: white;
+    font-family: 'Outfit', sans-serif;
+    font-size: 20px;
+    margin: 5px 20px 10px 20px;
+    border: 1px solid white;
+    /* da rivedere colore e sfumatura */
+    cursor: pointer;
+}
+
+.rispostaSelezionata {
+    background-color: #c51390;
+}
+
+#footer_domanda {
+    text-align: center;
+    margin: 0;
+}
+
+.question {
+    margin-top: 200px;
+}
+
+footer p {
+    font-size: 20px;
+}
+
+#totale_domande {
+    color: #C5138F;
+    font-size: 20px;
+}
+
+#domanda_corrente {
+    font-size: 20px;
+}
+
+.rateUs {
+    width: 270px;
+    height: 70px;
+    border: 3px solid white;
+    background-color: transparent;
+    color: white;
+    font-size: 1.5em;
+    font-weight: 900;
+    box-shadow: 1px 1px 50px #00ffff37;
+    cursor: pointer;
+    position: relative;
+    bottom: 100px;
+}
+
+/* quarta pagina */
+
+#feedback-container {
+    text-align: center;
+    padding: 0 12vw 0 12vw;
+}
+
+#feedback-container p {
+    font-weight: 500;
+    color: white;
+}
+
+h4 {
+    font-size: 60px;
+    margin-top: 100px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+#star-container {
+    margin-bottom: 80px;
+}
+
+
+#star-container svg {
+    margin-right: 10px;
+    cursor: pointer;
+    transition: fill 0.3s;
+}
+
+#star-container svg:hover,
+#star-container svg.selected {
+    fill: #00FFFF;
+}
+
+.info-footer {
+    text-align: center;
+}
+
+#info-button {
+    width: 300px;
+    height: 80px;
+    background-color: #00ffff;
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+    box-shadow: 1px 1px 50px #00ffffb7;
+    cursor: pointer;
+}
+
+hr {
+    margin-top: 0;
+    margin-bottom: 70px;
+    border: 1.5px solid #C5138F;
+}
+
+#comment-container {
+    padding: 0 13vw 0 13vw;
+}
+
+#comment {
+    width: 90%;
+    color: white;
+    font-size: 18px;
+    margin-left: 35px;
+    background-color: transparent;
+    border: none;
+}
+
+textarea:focus {
+    border: none;
+    outline: none;
+    resize: none;
+}
+
+textarea {
+    resize: none;
+}
+
+/* ------------ Pagina risultati--------------- */
+
+.titoloResults {
+    text-align: center;
+}
+
+.results {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-size: 50px;
+}
+
+.sottoResult {
+    font-size: 27px;
+}
+
+.bloccoCorrect,
+.bloccoCentrale,
+.bloccoWrong {
+    text-align: center;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.bloccoCentrale {
+    width: 70%;
+    height: 500px;
+}
+
+.bloccoCorrect {
+    text-align: left;
+    width: 15%;
+    position: relative;
+    bottom: 350px;
+}
+
+.bloccoCorrect p {
+    line-height: 1;
+}
+
+.bloccoWrong {
+    text-align: right;
+    width: 15%;
+    position: relative;
+    bottom: 350px;
+}
+
+.bloccoWrong p {
+    line-height: 1;
+}
+
+.paragrafoDxSxAlto {
+    margin: 0;
+    font-size: 42px;
+    font-weight: 400;
+}
+
+.percentuale {
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+.risposte {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+#grafico {
+    margin: 0 auto;
+}
+
+#myChartResult {
+    margin: 0 auto;
+    max-width: 500px;
+    max-height: 500px;
+    min-width: 500px;
+    min-height: 500px;
+}
+
+.internoAnello {
+    position: relative;
+    transform: translateY(-70%);
+    min-width: 500px;
+    min-height: 500px;
+}
+
+.paragrafoCentrale {
+    font-size: 22px;
+}
+
+.congratulations {
+    font-size: 28px;
+    font-weight: 500;
+}
